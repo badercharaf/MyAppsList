@@ -142,10 +142,10 @@
           
           document.getElementById('my-html').style.display = 'none';
 
-            // إدراج الكود الجديد
+            
             document.getElementById('my-html').innerHTML = html;
 
-            // إظهار العنصر الجديد
+            
           
   document.getElementById('my-html').style.display = 'block';
         
