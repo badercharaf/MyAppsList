@@ -130,30 +130,30 @@
 	</style>
 </head>
 <body>
-    <div id="my-html-1">
+    <div id="my-html">
 <div class="title"> 
-  <img src="/bcapps/img/small-list.png" onclick="loadHTML-1()" alt="قائمة">
+  <img src="/bcapps/img/small-list.png" onclick="loadHTML()" alt="قائمة">
  
 <script>
-      function loadHTML-1() {
+      function loadHTML() {
         fetch('/bcapps/small-list.html')
           .then(response => response.text())
           .then(html => {
           
-          document.getElementById('my-html-1').style.display = 'none';
+          document.getElementById('my-html').style.display = 'none';
 
             
-            document.getElementById('my-html-1').innerHTML = html;
+            document.getElementById('my-html').innerHTML = html;
 
             
           
-  document.getElementById('my-html-1').style.display = 'block';
+  document.getElementById('my-html').style.display = 'block';
         
 
           })
       }
     </script>
-    <h3>BCAPPS v1</h3>
+    <h3>BCAPPS v2</h3>
   </div>
 	
 		    <div class="app-card" onclick="window.location.href='https://bctube.en.uptodown.com/android';"> 
