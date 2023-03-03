@@ -112,11 +112,15 @@
  <div id="my-html">
      <div class="title">
      <img src="/bcapps/img/big-list.png" onclick="loadHTML()" alt="قائمة">
-     <script> function loadHTML() { fetch('/bcapps/index.html') .then(response => response.text()) .then(html => { document.getElementById('my-html').style.display = 'none';
+     <script> function loadHTML() { fetch('/bcapps/index.html') .then(response => response.text()) .then(html => {
+document.getElementById('my-html').style.display = 'none';
          
 document.getElementById('my-html').innerHTML = html;
 
 document.getElementById('my-html').style.display = 'block';
+
+document.getElementById('my-html').onclick = loadHTML;
+
 })
 }
 </script>
