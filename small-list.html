@@ -15,37 +15,6 @@
 }
 
 
-	.title2 {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  margin-top:0px;
-  margin-left:0px;
-  background-color: #333;
-}
-
-.title2 h3 {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-
-.title2 img {
-  margin-right: 10px;
-  margin-left: 0px;
-  width: 40px;
-  height: 40px;
-  order: 2;
-}
-
-
-
 	.card {
   width: 100%;
   height: 60px;
@@ -83,52 +52,11 @@
   font-size: 10px;
 }
 
-		
-		.footer {
-			background-color: #333;
-			color: #fff;
-			margin: 10px;
-			padding: 20px;
-			text-align: center;
-			margin-top: 40px;
-			border-radius: 5px;
-		}
-		
-		.footer p {
-			margin: 0;
-			font-size: 14px;
-		}
-		
-		.footer a {
-			color: green;
-			text-decoration: none;
-		}
+	
 		
 	</style>
 </head>
 <body>
- 
- 
- <div id="my-html">
-     <div class="title2">
-     <img src="/bcapps/img/big-list.png" onclick="loadHTML()" alt="قائمة">
-     <script> function loadHTML() { fetch('/bcapps/index.html') .then(response => response.text()) .then(html => {
-document.getElementById('my-html').style.display = 'none';
-         
-document.getElementById('my-html').innerHTML = html;
-
-document.getElementById('my-html').style.display = 'block';
-
-document.getElementById('my-html').onclick = loadHTML;
-
-})
-}
-</script>
- 
- 
- 
-    <h3>BCAPPS</h3>
-  </div>
 	
 	
 
@@ -215,11 +143,5 @@ document.getElementById('my-html').onclick = loadHTML;
 		
 
 
-
-
-	<div class="footer">
-		<p><a href="https://t.me/BC_APPS">BCAPPS</a> By Bader Charaf<br>&copy; 2022 - 2023</p>
-	</div>
-	</div>
 </body>
 </html>
