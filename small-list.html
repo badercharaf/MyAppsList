@@ -109,14 +109,14 @@
 <body>
  
  
- <div id="my-html1">
+ <div id="my-html">
      <div class="title">
-     <img src="/bcapps/img/big-list.png" onclick="loadHTML1()" alt="قائمة">
-     <script> function loadHTML1() { fetch('/bcapps/index.html') .then(response => response.text()) .then(html => { document.getElementById('my-html1').style.display = 'none';
+     <img src="/bcapps/img/big-list.png" onclick="loadHTML()" alt="قائمة">
+     <script> function loadHTML() { fetch('/bcapps/index.html') .then(response => response.text()) .then(html => { document.getElementById('my-html').style.display = 'none';
          
-document.getElementById('my-html1').innerHTML = html;
+document.getElementById('my-html').innerHTML = html;
 
-document.getElementById('my-html1').style.display = 'block';
+document.getElementById('my-html').style.display = 'block';
 })
 }
 </script>
