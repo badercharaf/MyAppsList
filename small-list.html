@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>تطبيقاتي</title>
+	<title>BCAPPS</title>
+	<link rel="icon" href="/bcapps/img/favicon.png" type="image/x-icon">
 	<style>
 		body {
 			font-family: Arial, sans-serif;
@@ -106,10 +107,21 @@
 	</style>
 </head>
 <body>
-	
-	
-	<div class="title" onclick="window.location.href='https://badercharaf.github.io/bcapps/big-list.html';"> 
-  <img src="https://raw.githubusercontent.com/badercharaf/bcapps/main/img/big-list.png" alt="قائمة">
+ 
+ 
+ <div id="my-html">
+     <div class="title">
+     <img src="/bcapps/img/big-list.png" onclick="loadHTML()" alt="قائمة">
+     <script> function loadHTML() { fetch('/bcapps/index.html') .then(response => response.text()) .then(html => { document.getElementById('my-html').style.display = 'none';
+         
+document.getElementById('my-html').innerHTML = html;
+
+document.getElementById('my-html').style.display = 'block';
+})
+}
+</script>
+ 
+ 
  
     <h3>BCAPPS</h3>
   </div>
@@ -202,8 +214,8 @@
 
 
 	<div class="footer">
-		<p><a href="https://example.com/">BCAPPS</a> By Bader Charaf<br>&copy; 2022 - 2023</p>
+		<p><a href="https://t.me/BC_APPS">BCAPPS</a> By Bader Charaf<br>&copy; 2022 - 2023</p>
 	</div>
-	
+	</div>
 </body>
 </html>
