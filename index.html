@@ -4,7 +4,7 @@
 
     <title>BCAPPS</title>
 
-<link rel="icon" type="image/x-icon" href="https://github.com/badercharaf/bcapps/raw/main/img/favicon.png">
+<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 
   </head>
 
@@ -15,7 +15,7 @@
 </div>
 
     <script>
- fetch('https://badercharaf.github.io/bcapps/big-list.html')
+ fetch('/big-list.html')
           .then(response => response.text())
           .then(html => {
             document.getElementById('my-html').innerHTML = html;
