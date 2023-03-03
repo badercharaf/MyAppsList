@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>تطبيقاتي</title>
+	<title>BCAPPS</title>
 	<link rel="icon" href="/img/favicon.png" type="image/x-icon">
 
 	<style>
@@ -130,26 +130,26 @@
 	</style>
 </head>
 <body>
-    <div id="my-html">
+    <div id="my-html-1">
 <div class="title"> 
-  <img src="/bcapps/img/small-list.png" onclick="loadHTML()" alt="قائمة">
+  <img src="/bcapps/img/small-list.png" onclick="loadHTML-1()" alt="قائمة">
  
 <script>
-      function loadHTML() {
+      function loadHTML-1() {
         fetch('/bcapps/small-list.html')
           .then(response => response.text())
           .then(html => {
           
-          document.getElementById('my-html').style.display = 'none';
+          document.getElementById('my-html-1').style.display = 'none';
 
             
-            document.getElementById('my-html').innerHTML = html;
+            document.getElementById('my-html-1').innerHTML = html;
 
             
           
-  document.getElementById('my-html').style.display = 'block';
+  document.getElementById('my-html-1').style.display = 'block';
         
-document.getElementById('my-html').onclick = loadHTML;
+document.getElementById('my-html-1').onclick = loadHTML-1;
           
           })
       }
