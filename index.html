@@ -15,7 +15,7 @@
 		}
 		
 		
-			.title {
+			.sml-title {
   width: 100%;
   height: 60px;
   display: flex;
@@ -25,7 +25,7 @@
   background-color: #333;
 }
 
-.title h3 {
+.sml-title h3 {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -36,7 +36,7 @@
   color: #fff;
 }
 
-.title img {
+.sml-title img {
   margin-right: 10px;
   margin-left: 0px;
   width: 40px;
@@ -130,24 +130,24 @@
 	</style>
 </head>
 <body>
-    
-<div class="title"> 
-  <img src="/bcapps/img/small-list.png" onclick="loadHTML()" alt="قائمة">
+    <div id="sml-my-html">
+<div class="sml-title"> 
+  <img src="/bcapps/img/small-list.png" onclick="sml-loadHTML()" alt="قائمة">
  
 <script>
-      function loadHTML() {
+      function sml-loadHTML() {
         fetch('/bcapps/small-list.html')
           .then(response => response.text())
           .then(html => {
           
-          document.getElementById('my-html').style.display = 'none';
+          document.getElementById('sml-my-html').style.display = 'none';
 
             
-            document.getElementById('my-html').innerHTML = html;
+            document.getElementById('sml-my-html').innerHTML = html;
 
             
           
-  document.getElementById('my-html').style.display = 'block';
+  document.getElementById('sml-my-html').style.display = 'block';
         
 
           })
@@ -155,7 +155,7 @@
     </script>
     <h3>BCAPPS v22</h3>
   </div>
-	<div id="my-html">
+	
 		    <div class="app-card" onclick="window.location.href='https://bctube.en.uptodown.com/android';"> 
 			<img src="https://raw.githubusercontent.com/badercharaf/bcapps/main/img/BCTube.jpeg" alt="صورة التطبيق">
 			<h2>BCTube</h2>
