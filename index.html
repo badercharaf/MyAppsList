@@ -15,36 +15,6 @@
 		}
 		
 		
-			.sml-title {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  margin-top:0px;
-  margin-left:0px;
-  background-color: #333;
-}
-
-.sml-title h3 {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-
-.sml-title img {
-  margin-right: 10px;
-  margin-left: 0px;
-  width: 40px;
-  height: 40px;
-  order: 2;
-}
-			
-	
 		
 		.app-card {
 			background-color: #fff;
@@ -101,60 +71,11 @@
 			text-decoration: none;
 		}
 		
-	
-		
-		
-		.footer {
-			background-color: #333;
-			color: #fff;
-			margin: 10px;
-			padding: 20px;
-			text-align: center;
-		
-			margin-top: 40px;
-			border-radius: 5px;
-		}
-		
-		
-		.footer p {
-			margin: 0;
-			font-size: 14px;
-		}
-		
-		
-		.footer a {
-			color: green;
-			text-decoration: none;
-		}
 		
 	</style>
 </head>
 <body>
-    <div id="sml-my-html">
-<div class="sml-title"> 
-  <img src="/bcapps/img/small-list.png" onclick="sml-loadHTML()" alt="قائمة">
- 
-<script>
-      function sml-loadHTML() {
-        fetch('/bcapps/small-list.html')
-          .then(response => response.text())
-          .then(html => {
-          
-          document.getElementById('sml-my-html').style.display = 'none';
-
-            
-            document.getElementById('sml-my-html').innerHTML = html;
-
-            
-          
-  document.getElementById('sml-my-html').style.display = 'block';
-        
-
-          })
-      }
-    </script>
-    <h3>BCAPPS v3</h3>
-  </div>
+    
 	
 		    <div class="app-card" onclick="window.location.href='https://bctube.en.uptodown.com/android';"> 
 			<img src="https://raw.githubusercontent.com/badercharaf/bcapps/main/img/BCTube.jpeg" alt="صورة التطبيق">
@@ -228,11 +149,6 @@
 	
 	
 	
-	<div class="footer">
-		<p><a href="https://example.com/">BCAPPS</a> By Bader Charaf
-<br>
-&copy; 2022 - 2023</p>
-	</div>
-	</div>
+	
 </body>
 </html>
