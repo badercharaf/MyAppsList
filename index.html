@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BCAPPS</title>
-	<link rel="icon" href="/img/favicon.png" type="image/x-icon">
+	<link rel="icon" href="/bcapps/img/favicon.png" type="image/x-icon">
 
 	<style>
 	    
@@ -78,7 +78,7 @@
     <script>
       
 
-        fetch('//small-list.html')
+        fetch('/bcapps/small-list.html')
           .then(response => response.text())
           .then(html => {
           
@@ -94,14 +94,14 @@ document.getElementById('my-html').style.display = 'block';
     
 <div class="title"> 
     
-     <img id="small" src="//img/small-list.png" onclick="loadSmallHTML()" alt="قائمة">
+     <img id="small" src="/bcapps/img/small-list.png" onclick="loadSmallHTML()" alt="small">
  
 <script>
       function loadSmallHTML() {
       
        document.getElementById('small').style.display = 'none';
 document.getElementById('big').style.display = 'block';
-        fetch('/small-list.html')
+        fetch('/bcapps/small-list.html')
           .then(response => response.text())
           .then(html => {
           
@@ -116,14 +116,14 @@ document.getElementById('big').style.display = 'block';
 </script>
 
 
-<img id="big" src="/img/big-list.png" onclick="loadBigHTML()" alt="قائمة">
+<img id="big" src="/bcapps/img/big-list.png" onclick="loadBigHTML()" alt="big">
 
 <script>
       function loadBigHTML() {
       
       document.getElementById('small').style.display = 'block';
 document.getElementById('big').style.display = 'none';
-        fetch('/big-list.html')
+        fetch('/bcapps/big-list.html')
           .then(response => response.text())
           .then(html => {
           
