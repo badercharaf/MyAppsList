@@ -4,7 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>تطبيقاتي</title>
+	<link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
 	<style>
+	    
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #f2f2f2;
@@ -127,9 +130,29 @@
 	</style>
 </head>
 <body>
-<div class="title" onclick="window.location.href='https://badercharaf.github.io/bcapps/small-list.html';"> 
-  <img src="https://github.com/badercharaf/bcapps/raw/main/img/small-list.png" alt="قائمة">
+    <div id="my-html">
+<div class="title"> 
+  <img src="/bcapps/img/small-list.png" onclick="loadHTML()" alt="قائمة">
  
+<script>
+      function loadHTML() {
+        fetch('/bcapps/small-list.html')
+          .then(response => response.text())
+          .then(html => {
+          
+          document.getElementById('my-html').style.display = 'none';
+
+            // إدراج الكود الجديد
+            document.getElementById('my-html').innerHTML = html;
+
+            // إظهار العنصر الجديد
+          
+  document.getElementById('my-html').style.display = 'block';
+        
+          
+          })
+      }
+    </script>
     <h3>BCAPPS</h3>
   </div>
 	
@@ -210,7 +233,6 @@
 <br>
 &copy; 2022 - 2023</p>
 	</div>
-	
+	</div>
 </body>
 </html>
-		
